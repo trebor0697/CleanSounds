@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="CleanSounds.Views.BreathePage"
+             Title="{Binding Title}">
+
+    <StackLayout BackgroundColor="#daf2ef" >
+        <StackLayout BackgroundColor="#63c5b6" >
+            <Label HorizontalOptions="Center" Text="Blenheim Palace" TextColor="White" FontSize="Title" Margin="0, 15, 0, 15" />
+        </StackLayout>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Image Source="castle01"/>
+        </StackLayout>
+        <Grid Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Text="Article Tittle" TextColor="#5fc4b5" FontAttributes="Bold" FontSize="Large"  Grid.ColumnSpan="3" Margin="10, 0, 0, 0"/>
+            <Image Source="share.png" Grid.Row="1" Grid.Column="0" HeightRequest="95" WidthRequest="95"/>
+            <Image Source="calendar1.png" Grid.Row="1" Grid.Column="1" HeightRequest="10" WidthRequest="10"/>
+            <Image Source="Heart.png" Grid.Row="1" Grid.Column="2" HeightRequest="10" WidthRequest="10"/>
+
+        </Grid>
+        <StackLayout Margin="20">
+            <Label Text="El Spa"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+               TextColor="#5fc4b5"/>
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout >
+                    <Label FontSize="Medium" Text="FOR the most wild, yet most homely narrative which I am about to pen, I neither expect nor solicit belief. Mad indeed would I be to expect it, in a case where my very senses reject their own evidence. Yet, mad am I not -- and very surely do I not dream. But to-morrow I die, and to-day I would unburthen my soul. My immediate purpose is to place before the world, plainly, succinctly, and without comment, a series of mere household events. In their consequences, these events have terrified -- have tortured -- have destroyed me. Yet I will not attempt to expound them. To me, they have presented little but Horror -- to many they will seem less terrible than barroques. Hereafter, perhaps, some intellect may be found which will reduce my phantasm to the common-place -- some intellect more calm, more logical, and far less excitable than my own, which will perceive, in the circumstances I detail with awe, nothing more than an ordinary succession of very natural causes and effects." />
+                    <!-- More Label objects go here -->
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </StackLayout>
+    
+    
+</ContentPage>

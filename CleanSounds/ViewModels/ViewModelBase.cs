@@ -16,11 +16,22 @@ namespace CleanSounds.ViewModels
         {
             get { return _title; }
             set { SetProperty(ref _title, value); }
+
+            
         }
+        private DelegateCommand _navigateCommand;
+
+        public DelegateCommand NavigateCommand =>
+            _navigateCommand ?? (_navigateCommand = new DelegateCommand(ExecuteNavigateCommand));
 
         public ViewModelBase(INavigationService navigationService)
         {
             NavigationService = navigationService;
+        }
+
+        async void ExecuteNavigateCommand()
+        {
+            await NavigationService.NavigateAsync("RainingSidewalk");
         }
 
         public virtual void Initialize(INavigationParameters parameters)

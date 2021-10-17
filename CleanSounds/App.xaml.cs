@@ -19,7 +19,7 @@ namespace CleanSounds
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/HomePage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -27,7 +27,9 @@ namespace CleanSounds
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
-            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>("HomePage");
+            containerRegistry.RegisterForNavigation<BreathePage, BreathePageViewModel>("BreathePage");
+            containerRegistry.RegisterForNavigation<DailyMeditationCard, DailyMeditationCardViewModel>("RainingSidewalk");
         }
     }
 }

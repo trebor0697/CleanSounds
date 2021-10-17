@@ -34,25 +34,23 @@
                          Grid.Row="1" Grid.Column="0" 
                          Margin="10, 15, 15, 15" 
                          BackgroundColor="Transparent" 
-                         Clicked="Button_Breathe"/>
+                         HeightRequest="50"
+                         WidthRequest="50"/>
             <ImageButton Source="sleep.png" 
                          Grid.Row="1" 
                          Grid.Column="1" 
                          Margin="15, 15, 15, 15"  
-                         BackgroundColor="Transparent" 
-                         Clicked="Button_Sleep"/>
+                         BackgroundColor="Transparent"/>
             <ImageButton Source="anxiety.png" 
                          Grid.Row="1" 
                          Grid.Column="2" 
                          Margin="15, 15, 15, 15" 
-                         BackgroundColor="Transparent" 
-                         Clicked="Button_Anxiety"/>
+                         BackgroundColor="Transparent"/>
             <ImageButton Source="stress.png" 
                          Grid.Row="1" 
                          Grid.Column="3" 
                          Margin="15, 15, 15, 15" 
-                         BackgroundColor="Transparent" 
-                         Clicked="Button_Stress"/>
+                         BackgroundColor="Transparent"/>
 
         </Grid>
 
@@ -78,9 +76,22 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Label Grid.Row="0" Text="   Daily Meditation" FontAttributes="Bold" FontSize="Large" Grid.ColumnSpan="2" />
-            <ImageButton Source="cactuscard.png" Grid.Row="1"  Grid.Column="0" Margin="5, 0, 0, 0" />
-            <ImageButton Source="arc.png" Grid.Row="1"  Grid.Column="1" Margin="0, 0, 0, 0" />
-            <ImageButton Source="beach.png" Grid.Row="1"  Grid.Column="2" Margin="0, 0, 0, 0" />
+            <ImageButton 
+                Source="cactuscard.png" 
+                Grid.Row="1"  
+                Grid.Column="0"
+                Clicked="ImageButton_Clicked"
+                Margin="5, 0, 0, 0" />
+            <ImageButton 
+                Source="arc.png" 
+                Grid.Row="1"  
+                Grid.Column="1" 
+                Margin="0, 0, 0, 0" />
+            <ImageButton 
+                Source="beach.png" 
+                Grid.Row="1"  
+                Grid.Column="2" 
+                Margin="0, 0, 0, 0" />
         </Grid>
 
 

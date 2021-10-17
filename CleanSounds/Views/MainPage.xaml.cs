@@ -8,9 +8,11 @@ namespace CleanSounds.Views
             InitializeComponent();
         }
 
-        async void GoToHotelPage(object sender, EventArgs e)
+        private async void ImageButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new HotelPage(), true);
+            await Navigation.PushAsync(new BreathePage(), true);
         }
+
+        
     }
 }

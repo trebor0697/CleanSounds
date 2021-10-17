@@ -6,9 +6,9 @@ using System.Linq;
 
 namespace CleanSounds.ViewModels
 {
-    public class PrismContentPage1ViewModel : BindableBase
+    public class DailyMeditationCardViewModel : BindableBase
     {
-        public PrismContentPage1ViewModel()
+        public DailyMeditationCardViewModel()
         {
 
         }
