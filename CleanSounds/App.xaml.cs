@@ -30,6 +30,7 @@ namespace CleanSounds
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>("HomePage");
             containerRegistry.RegisterForNavigation<BreathePage, BreathePageViewModel>("BreathePage");
             containerRegistry.RegisterForNavigation<DailyMeditationCard, DailyMeditationCardViewModel>("RainingSidewalk");
+            containerRegistry.RegisterForNavigation<BeachParadise, BeachParadiseViewModel>("BeachParadise");
         }
     }
 }
